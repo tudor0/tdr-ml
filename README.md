@@ -1,5 +1,7 @@
-### Tdr-ML is a face detection site
+# SmartBrain - v3
+Final project for ZTM course
 
-Simply enter an image link and press detect
 
-Todo: Add cloning instruction.
+1. Clone this repo
+2. Run `npm install`
+3. Run `npm start`
