@@ -10,6 +10,21 @@ import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
 import Rank from "./components/Rank/Rank";
 import "./App.css";
 
+const initialState = {
+  input: "",
+      imageUrl: "",
+      box: {},
+      route: "signin",
+      isSignedIn: false,
+      user: {
+        id: "",
+        name: "",
+        email: "",
+        entries: 0,
+        joined: "",
+      },
+}
+
 const particlesOptions = {
   particles: {
     number: {
@@ -107,7 +122,7 @@ class App extends Component {
 
   onRouteChange = (route) => {
     if (route === "signout") {
-      this.setState({ route: "signin", isSignedIn: false });
+      this.setState( initialState );
       console.log(this.state);
     } else if (route === "home") {
       this.setState({ isSignedIn: true });
